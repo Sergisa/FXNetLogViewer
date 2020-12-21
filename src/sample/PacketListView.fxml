@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PacketListViewCell">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="0.0" percentWidth="10.0" prefWidth="73.0" />
+    <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="307.0" minWidth="10.0" percentWidth="45.0" prefWidth="157.0" />
+      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="307.0" minWidth="10.0" percentWidth="45.0" prefWidth="163.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="label1" text="Source" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font></Label>
+      <ImageView fx:id="fxIconGender" fitHeight="17.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <image>
+            <Image url="@open.png" />
+         </image></ImageView>
+      <Label fx:id="label2" text="Destenation" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font></Label>
+   </children>
+</GridPane>

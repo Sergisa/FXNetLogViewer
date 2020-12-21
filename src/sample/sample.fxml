@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefWidth="800.0">
+         <children>
+            <ListView id="packetList" fx:id="packetList" layoutY="-1.0" prefHeight="400.0" prefWidth="800.0" />
+            <BorderPane layoutX="626.0" layoutY="5.0" prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: #ECEFF1;">
+               <left>
+                  <ImageView fitHeight="30.0" fitWidth="47.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" smooth="false" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@loading.gif" />
+                     </image>
+                  </ImageView>
+               </left>
+               <right>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="15.0" prefWidth="123.0" text="Загрузка файлов" textFill="#3f51b5" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="12.0" />
+                     </font>
+                  </Label>
+               </right>
+               <padding>
+                  <Insets left="6.0" right="6.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
