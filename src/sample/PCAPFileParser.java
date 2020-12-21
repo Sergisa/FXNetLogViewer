@@ -7,8 +7,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PCAPFileParser implements Parser{
+public class PCAPFileParser extends AbstractFileParser implements Parser {
     private final File file;
+
     public PCAPFileParser(File file) {
         this.file = file;
     }

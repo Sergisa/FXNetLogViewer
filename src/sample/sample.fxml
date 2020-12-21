@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-
+<?import javafx.scene.text.Font?>
 <AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane prefWidth="800.0">
          <children>
             <ListView id="packetList" fx:id="packetList" layoutY="-1.0" prefHeight="400.0" prefWidth="800.0" />
-            <BorderPane layoutX="626.0" layoutY="5.0" prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: #ECEFF1;">
+            <BorderPane fx:id="loaderView" layoutX="626.0" layoutY="5.0" prefHeight="39.0" prefWidth="167.0"
+                        style="-fx-background-color: #ECEFF1;">
                <left>
-                  <ImageView fitHeight="30.0" fitWidth="47.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" smooth="false" BorderPane.alignment="CENTER">
+                  <ImageView fx:id="stateIcon" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY" fitHeight="30.0"
+                             fitWidth="47.0" nodeOrientation="RIGHT_TO_LEFT" preserveRatio="true" smooth="false"
+                             BorderPane.alignment="CENTER">
                      <image>
-                        <Image url="@loading.gif" />
+                        <Image url="@loading.gif"/>
                      </image>
                   </ImageView>
                </left>
                <right>
-                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="15.0" prefWidth="123.0" text="Загрузка файлов" textFill="#3f51b5" BorderPane.alignment="CENTER">
+                  <Label fx:id="stateText" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                         prefHeight="15.0" prefWidth="123.0" text="Загрузка файлов" textFill="#3f51b5"
+                         BorderPane.alignment="CENTER">
                      <font>
-                        <Font name="Montserrat SemiBold" size="12.0" />
+                        <Font name="Montserrat SemiBold" size="12.0"/>
                      </font>
                   </Label>
                </right>
